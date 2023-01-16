@@ -1,0 +1,183 @@
+/* 가입인사 게시판 */
+
+.InputBox {
+  width: 500px;
+  height: 104px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #b3b3b3;
+  font-size: 13px;
+  display: block;
+  min-inline-size: min-content;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.InputText {
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  border: 0 none;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: top;
+  appearance: none;
+  box-sizing: border-box;
+  resize: none;
+  font-family: "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "돋움",
+    dotum, sans-serif;
+}
+
+.set_attach {
+  border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+  background-color: #f8f8f8;
+  display: block;
+  position: relative;
+  min-height: 43px;
+  padding-left: 12px;
+  margin-bottom: -1px;
+  font-size: 13px;
+}
+
+.btn {
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  width: 68px;
+  height: 44px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  background-color: #454545;
+  text-align: center;
+}
+
+.contents_list_section {
+  border: 1px solid rgba(229, 229, 229, 0.6);
+  width: 468px;
+  display: block;
+  padding: 0 16px 16px;
+  margin-top: 16px;
+}
+
+.user_info {
+  margin-top: 0;
+  border-top: 0;
+  padding-top: 16px;
+  display: block;
+  position: relative;
+  width: 468px;
+  height: 25px;
+}
+
+.user_name {
+  position: absolute;
+  top: -1px;
+
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+.user_time {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-size: 11px;
+  opacity: 0.5;
+  display: block;
+}
+
+/* input.off {
+  display: none;
+}
+input.on {
+  display: block;
+} */
+
+.outLine {
+  display: flex;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  width: auto;
+  margin: auto;
+  padding: 2px;
+  overflow: scroll;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.update_area {
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.update_input_container {
+  position: relative;
+  display: flex;
+  top: 27%;
+  z-index: 99;
+  width: 361.4px;
+  height: 61.6px;
+  margin: 0 auto;
+}
+
+.update_input {
+  height: 60px;
+  width: 306px;
+  padding: 0;
+  border: 0.1px solid #fff;
+  border-radius: 0.3em;
+}
+
+.user_texted {
+  height: 47px;
+  width: 396px;
+  padding: 0px 5px;
+  border: 1px solid #454545;
+  border-radius: 0.3em;
+  font-size: 8px;
+}
+
+.update_btn,
+.delete_btn {
+  padding: 1px 2px;
+  color: #fff;
+  background-color: #454545;
+  border-radius: 2.3em;
+  font-size: 5px;
+  left: 412px;
+  position: relative;
+  margin-right: 4px;
+  top: -1px;
+}
+
+.update_btn_off {
+  padding: 1px 12px;
+  color: #fff;
+  background-color: #454545;
+  font-size: 13px;
+  border: 1px solid #454545;
+  border-radius: 0.3rem;
+}
