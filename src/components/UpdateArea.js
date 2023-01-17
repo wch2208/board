@@ -11,6 +11,7 @@ export default function UpdateArea(props) {
           className="update_input"
           defaultValue={props.editTodo}
           maxLength="117"
+          autoFocus
         />
         <button className="update_btn_off">완료</button>
       </form>

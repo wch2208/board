@@ -2,6 +2,7 @@ import React, { useState, useRef, useLayoutEffect } from "react";
 import "./App.css";
 import MemoList from "./components/MemoList";
 import UpdateArea from "./components/UpdateArea";
+import Create from "./components/Create";
 
 function App() {
   const [id, setId] = useState(0);
@@ -17,7 +18,7 @@ function App() {
   /* Create */
 
   //게시글을 생성한다
-  function updateControl() {
+  function updateControl(e) {
     const newContents = [...contents];
     const newContent = { id: nextId, text: textST };
     newContents.push(newContent);
@@ -113,28 +114,13 @@ function App() {
             handleSubmit={handleSubmit}
           />
         ) : null}
-        <fieldset className="InputBox">
-          <div className="input_area">
-            <input
-              className="InputText"
-              placeholder="내용을 입력해주세요"
-              onChange={texting}
-              onKeyPress={OnKeyPress}
-              ref={CreateInput}
-              maxLength="117"
-            />
-            <div className="set_attach">
-              <button
-                className="btn"
-                onClick={() => {
-                  updateControl();
-                }}
-              >
-                메모
-              </button>
-            </div>
-          </div>
-        </fieldset>
+        <Create
+          onChange={texting}
+          OnKeyPress={OnKeyPress}
+          CreateInput={CreateInput}
+          updateControl={updateControl}
+          texting={texting}
+        />
         <MemoList
           contents={contents}
           TargetId={TargetId}
