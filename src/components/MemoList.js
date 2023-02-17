@@ -42,7 +42,6 @@ export default function MemoList(props) {
               className="delete_btn"
               id={contents.id}
               onClick={e => {
-                console.log("삭제버튼 클릭 감지됨");
                 e.preventDefault();
                 props.TargetId(e);
                 props.handleDelete(e);
